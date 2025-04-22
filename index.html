@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arjan Gupta - Resume</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+/* Define the color palette */
+:root {
+  --dark-blue: #004c6d; /* Dark Blue */
+  --teal: #008c9e; /* Teal */
+  --blue: #0074a2; /* Blue */
+  --light-blue: #cbe8f0; /* Light Blue */
+  --orange: #f57c00; /* Orange */
+  --text-dark: #111827; /* Dark Text */
+  --text-light: #ffffff; /* Light Text */
+}
+
+/* General Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-blue); /* Light Blue */
+  color: var(--text-dark); /* Dark Text */
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--dark-blue); /* Dark Blue */
+  color: var(--text-light); /* White Text */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.nav__list li a {
+  color: var(--text-light); /* White Text */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav__list li a:hover {
+  color: var(--orange); /* Orange */
+}
+
+/* Photo Section */
+.photo-section {
+  text-align: center;
+  margin: 20px 0; /* Add spacing around the photo */
+}
+
+.profile-photo {
+  width: 300px; /* Set the width of the photo */
+  height: 300px; /* Set the height of the photo */
+  border-radius: 50%; /* Make the photo circular */
+  border: 3px solid var(--dark-blue); /* Add a border with the primary color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  object-fit: cover; /* Ensure the photo fits within the circle */
+}
+
+h2 {
+  text-align: center;
+  color: var(--dark-blue); /* Dark Blue */
+  margin-bottom: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 1200px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding around the content */
+}
+
+/* Box Container */
+.box-container {
+  background-color: var(--text-light); /* White Background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 30px; /* Padding inside the box */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px auto; /* Center the box */
+  max-width: 1000px; /* Limit the width of the box */
+}
+
+/* Cards */
+.card {
+  background-color: var(--light-blue); /* Light Blue */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px; /* Add spacing between cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slightly lift the card */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a deeper shadow */
+}
+
+.card ul, .card ol {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li, .card ol li {
+  margin-bottom: 10px;
+  color: var(--text-dark); /* Dark Text */
+}
+
+.card h3 {
+  color: var(--teal); /* Teal */
+  margin-bottom: 10px;
+}
+
+/* Skills Section */
+.skills span {
+  display: inline-block;
+  background-color: var(--blue); /* Blue */
+  color: var(--text-light); /* White Text */
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skills span:hover {
+  transform: scale(1.1);
+  background-color: var(--orange); /* Orange */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--dark-blue); /* Dark Blue */
+  color: var(--text-light); /* White Text */
+  margin-top: 20px;
+}
+
+.footer .contact-details {
+  margin-top: 10px;
+}
+
+.footer .contact-details a {
+  color: var(--orange); /* Orange */
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.footer .contact-details a:hover {
+  text-decoration: underline;
+}
+</style>
+<body>
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="header__logo">Arjan Gupta</div>
+    <nav class="header__nav">
+      <ul class="nav__list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Photo Section -->
+  <div class="photo-section">
+    <img src="https://via.placeholder.com/300" alt="Arjan Gupta's Photo" class="profile-photo">
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <main>
+      <!-- Box Container -->
+      <div class="box-container">
+        <!-- Career Objective Section -->
+        <section id="about" class="section">
+          <h2>Career Objective</h2>
+          <div class="card">
+            <p>
+              To make a positive contribution as part of your dynamic and well-reputed organization in a position where my management, decision-making, and communication skills will be appreciated and enhanced.
+            </p>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+          <h2>Education</h2>
+          <div class="card">
+            <ul>
+              <li><strong>Dr. Virendra Swarup Public School</strong> - 10th ISC, 92% (2021)</li>
+              <li><strong>Dr. Virendra Swarup Public School</strong> - 12th CISCE, 79% (2023)</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+          <h2>Skills</h2>
+          <div class="card">
+            <h3>Computer Skills</h3>
+            <ol>
+              <li>Sound knowledge of MS Word, MS Excel, MS PowerPoint</li>
+              <li>Good typing speed</li>
+              <li>Well-experienced with the use of the internet</li>
+            </ol>
+            <h3>Strengths</h3>
+            <ol>
+              <li>Positive attitude</li>
+              <li>Confident</li>
+              <li>Hardworking</li>
+              <li>Innovative</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+          <h2>Achievements</h2>
+          <div class="card">
+            <ol>
+              <li>Participated in inter-school competitions</li>
+              <li>Organized cultural events</li>
+              <li>Member of the event organizing committee</li>
+              <li>Volunteered in NGOs</li>
+              <li>Received certifications in Brainobrain</li>
+              <li>Part of Spell Bee Quiz (awarded with medals and certificates)</li>
+              <li>Member of the football team</li>
+              <li>Coordinated school events</li>
+            </ol>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <p>&copy; 2025 Arjan Gupta. All rights reserved.</p>
+    <div class="contact-details">
+      <p>Contact Me:</p>
+      <a href="mailto:arjangupta54@gmail.com"><i class="fas fa-envelope"></i> arjangupta54@gmail.com</a>
+      <a href="tel:+919219222320"><i class="fas fa-phone"></i> +91 9219222320</a>
+      <a href="https://www.linkedin.com/in/arjan-gupta" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
